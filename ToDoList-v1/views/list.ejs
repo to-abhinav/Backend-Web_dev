@@ -1,0 +1,23 @@
+  <body>
+    <div class="box" id="heading">
+      <h1> <%= listTitle %>!</h1>
+      
+    </div>
+    <div class=" box">
+      <%for(var i=0;i < newItem.length;i++){ %>
+      <div class="item">
+        <input type="checkbox" />
+        <p><%= newItem[i] %></p>
+      </div>
+      <% }%>
+
+      <form class="item" action="/" method="post">
+        <input type="text" name="nextItem" placeholder="New Item" autocomplete="off"/>
+        <div class="module-border-wrap">
+            
+            <button type="submit" name="list" class="addBtn" value="<%= listTitle %>">+</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

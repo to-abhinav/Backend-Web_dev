@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Submit Data</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="card shadow">
+    
+        <h1 style="text-align: center;">Enter Your Details</h1>
+        <form action="/" method="post">
+          <div class="form__group field">
+            <input type="text"  class="form__field" name="FirstName" id="FNAME" placeholder="First Name" required />
+            <label for="FNAME" class="form__label">First Name</label>
+          </div>
+          <div class="form__group field">
+            <input type="text"  class="form__field" name="LastName" id="LNAME" placeholder="Last Name" />
+            <label for="LNAME" name="LastName" class="form__label" >Last Name</label>
+          </div>
+            
+          
+            <div aria-required="true" style="margin: 20px 0 0 0;">
+              <input type="radio" name="gender" value="male" id="male" />
+              <label for="male">male</label>
+              <input type="radio" name="gender" value="female" id="female" />
+              <label for="female">female</label>
+            </div>
+            
+            <div class="form__group field">
+              <input type="text"  class="form__field" name="email" id="email" placeholder="Email" required />
+              <label for="email" class="form__label">Email</label>
+            </div>
+
+           
+            <button type="submit">Submit</button>
+          </form>
+    </div>
+   
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<%- include('partials/header'); -%>
+<h1>Home</h1>
+
+<p><%=bodyContentHome%></p>
+
+<!-- <%for(var i=0;i< postArr.length ;i++){%>
+<h2><%=postArr[i].titleBox%></h2>
+<p><%=postArr[i].postContent%></p>
+<%}%> -->
+
+<% postArr.forEach(function(elements){%>
+    <h2><%=elements.titleBox%></h2>
+    <p>
+        <%=elements.postContent.substring(0,100)%>
+        <a href= "/posts/ <%=elements.titleBox%> ">...Read more</a>
+    </p>
+<%})%>
+
+<%- include('partials/footer');-%>

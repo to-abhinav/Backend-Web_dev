@@ -1,0 +1,16 @@
+{
+  "name": "newsletter",
+  "version": "1.0.0",
+  "description": "This is a API project, in this project we will be collecting Name and email from the user to send them newsletter",
+  "main": "newsletter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abhinav Tomar",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "request": "^2.88.2"
+  }
+}

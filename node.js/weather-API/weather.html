@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API</title>
+</head>
+<body>
+    <h1 style="text-align: center; font-size: 5rem;">Weather in your City</h1>
+    <form action="/" method="post" style="text-align: center;margin: 4rem;">
+        <label for="city">Enter your City Name</label>
+        <input style="margin: 5rem 0rem;" type="text" name="cityName" id="city" placeholder="Enter your CIty">
+        <br>
+        <input type="radio" name="units" value="imperial" id="iUnits">
+        <label for="qUnits">Farenhiet</label>
+        <br>
+        <input type="radio" name="units" value="metric" id="mUnits">
+        <label for="mUnits">Celcius</label>
+        <br>
+        <button type="submit">Check Weather</button>
+        <!-- <img src="https://openweathermap.org/img/wn/50d@2x.png" alt="" srcset=""> -->
+    </form>
+
+
+</body>
+</html>
